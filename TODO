@@ -1,3 +1,5 @@
 - dotenv
 - Jest
 - aliases
+- authentication
+- route validation

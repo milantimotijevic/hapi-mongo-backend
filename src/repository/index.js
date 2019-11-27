@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-// TODO move connection string to env file
-mongoose.connect('mongodb://localhost:27017/superawesomedb', {
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

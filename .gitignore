@@ -6,10 +6,11 @@ logs
 node_modules/
 
 # dotenv environment variables file
-.env
-.env.development
-.env.production
-.env.test
+# TEMPORARILY COMMENTING OUT
+#.env
+#.env.development
+#.env.production
+#.env.test
 
 # test results
 test-results
