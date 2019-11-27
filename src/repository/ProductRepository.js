@@ -4,8 +4,8 @@ const fetchAll = function() {
     return mongoose.models.Product.find({});
 };
 
-const findOne = function(_id) {
-    return mongoose.models.Product.find({ _id });
+const findOne = function(product_id) {
+    return mongoose.models.Product.find({ _id: product_id });
 };
 
 module.exports = {

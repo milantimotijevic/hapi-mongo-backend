@@ -1,4 +1,5 @@
 const controller = require('./controller');
+const { userIdParam } = require('./validation');
 
 module.exports = [
     {
@@ -11,10 +12,12 @@ module.exports = [
     },
     {
         method: 'GET',
-        path: '/user/{id}',
+        path: '/user/{user_id}',
         handler: controller.fetchUserHandler,
-        config: {
-            auth: false
+        options: {
+            validate: {
+                params: userIdParam
+            }
         }
     }
 ];

@@ -1,5 +1,4 @@
-- dotenv
 - Jest
 - aliases
 - authentication
-- route validation
+- route validation - err description

@@ -1,4 +1,5 @@
 const controller = require('./controller');
+const { productIdParam } = require('./validation');
 
 module.exports = [
     {
@@ -11,10 +12,12 @@ module.exports = [
     },
     {
         method: 'GET',
-        path: '/product/{id}',
+        path: '/product/{product_id}',
         handler: controller.fetchProductHandler,
-        config: {
-            auth: false
+        options: {
+            validate: {
+                params: productIdParam
+            }
         }
     }
 ];
