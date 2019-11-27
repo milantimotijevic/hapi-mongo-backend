@@ -1,0 +1,11 @@
+{
+  "name": "hapi-mongo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app"
+  },
+  "author": "Milan Timotijevic",
+  "license": "ISC"
+}
