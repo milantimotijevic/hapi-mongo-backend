@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const fetchAll = function() {
-    return mongoose.models.User.find({});
+    return mongoose.models.Product.find({});
 };
 
 const findOne = function(_id) {
-    return mongoose.models.User.find({ _id });
+    return mongoose.models.Product.find({ _id });
 };
 
 module.exports = {

@@ -4,12 +4,8 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/superawesomedb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(async () => {
+}).then(() => {
     require('./model');
-    const userRepo = require('./UserRepository');
-
-    const users = await userRepo.fetchAll();
-    console.log(users)
 });
 
 const db = mongoose.connection;
